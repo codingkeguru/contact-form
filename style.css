@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Outfit';
+    background: linear-gradient(#ffdad5,#fff7f9);
+}
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    padding-left: 30px;
+}
+.contact-left-title h2{
+    font-weight: 600;
+    color: #a363aa;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #a363aa;
+    border-radius: 10px;
+    margin-bottom: 20px; 
+}
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    padding-left: 25px;
+    font-weight: 500;
+    /* color:#666; */
+    color:black;
+}
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.contact-inputs:focus{
+    box-shadow: 0 0 15px #a363aa;
+    border: 2px solid  #a363aa;
+}
+.contact-inputs::placeholder{
+    /* color: #a9a9a9; */
+    color: plum;
+}
+
+/* button styling */
+
+.btn {
+  position: relative;
+  outline: 0;
+  border: 1px solid transparent;
+  background-color: #488aec;
+  color: #ffffff;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px #488aec31, 0 2px 4px -1px #488aec17;
+}
+
+.btn span {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  transition: all .4s ease;
+}
+
+button svg {
+  width: 1.85rem;
+  height: 1.45rem;
+}
+
+.btn span:nth-child(2),.btn span:nth-child(3) {
+  position: absolute;
+  top: 40px;
+  color: #fff;
+}
+
+.btn span:nth-child(2) {
+  background-color: #488aec;
+}
+
+.btn span:nth-child(3) {
+  background-color: #488aec;
+}
+
+.btn:hover {
+  box-shadow: 0 10px 15px -3px #488aec4f, 0 4px 6px -2px #488aec17;
+}
+
+.btn:hover span:nth-child(2), .btn:focus span:nth-child(3) {
+  top: 0;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+@media (max-width: 768px) {
+    .conatct-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
+}
